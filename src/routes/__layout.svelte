@@ -9,9 +9,9 @@
 	<slot />
 </main>
 
-<footer>
+<!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+</footer> -->
 
 <style>
 	main {
@@ -30,7 +30,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
 	}
 
 	footer a {
