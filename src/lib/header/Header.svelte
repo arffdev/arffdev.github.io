@@ -6,8 +6,8 @@
 
 <header class="fancy-header">
 	<nav class="fancy-nav">
-		<a href="#" class:active={$page.url.pathname === '/'}>Me</a>
-		<a href="#" class:active={$page.url.pathname === '/projects'}>projects</a>
+		<a href="#me" class:active={$page.url.pathname === '/' || $page.url.pathname === '/#me'}>Me</a>
+		<a href="#projects" class:active={$page.url.pathname === '/#projects'}>projects</a>
     <div class="line"></div>
 	</nav>
 </header>

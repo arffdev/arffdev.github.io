@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	import Profile from '$lib/profile/Profile.svelte';
 </script>
 
 <svelte:head>
@@ -11,23 +11,12 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<!-- <h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
+<section id="me">
+	<Profile />
+</section>
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter /> -->
+<section id="projects">
+	PROJECTS
 </section>
 
 <style>
