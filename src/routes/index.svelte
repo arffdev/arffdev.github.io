@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Profile from '$lib/profile/Profile.svelte';
+	import Profile from '$lib/components/profile/Profile.svelte';
 </script>
 
 <svelte:head>
@@ -15,9 +15,9 @@
 	<Profile />
 </section>
 
-<section id="projects">
+<!-- <section id="projects">
 	PROJECTS
-</section>
+</section> -->
 
 <style>
 	section {
