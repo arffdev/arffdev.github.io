@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { TECH_STACKS, CODE_STACKS } from "$lib/constants";
+  import { TECH_STACKS, CODE_STACKS_0, CODE_STACKS_1 } from "$lib/constants";
   import TechStacks from "../techstacks/TechStacks.svelte";
 </script>
 
@@ -15,7 +15,8 @@
 </div>
 
 <TechStacks title="Frameworks" tech_stacks={TECH_STACKS} />
-<TechStacks title="Code Familiarity" tech_stacks={CODE_STACKS} />
+<TechStacks title="Code Familiarity" tech_stacks={CODE_STACKS_0} />
+<TechStacks title="Want learn more of..." tech_stacks={CODE_STACKS_1} />
 
 <style>
   .profile-container {

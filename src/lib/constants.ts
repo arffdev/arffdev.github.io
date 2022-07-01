@@ -45,7 +45,7 @@ export const TECH_STACKS: TechStack[] = [
   },
 ];
 
-export const CODE_STACKS: TechStack[] = [
+export const CODE_STACKS_0: TechStack[] = [
   {
     name: "Javascript",
     color: "#fcdc00",
@@ -69,5 +69,20 @@ export const CODE_STACKS: TechStack[] = [
     color: "#478cbf",
     borderColor: "#ffffff",
     link: "https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html"
+  },
+];
+
+export const CODE_STACKS_1: TechStack[] = [
+  {
+    name: "Swift",
+    color: "#fd7e35",
+    borderColor: "#ffffff",
+    link: "https://developer.apple.com/swift/"
+  },
+  {
+    name: "Kotlin",
+    color: "#7f52ff",
+    borderColor: "#ffffff",
+    link: "https://kotlinlang.org/"
   },
 ];
