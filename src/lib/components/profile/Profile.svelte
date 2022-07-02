@@ -1,27 +1,45 @@
 <script lang="ts">
-  import { TECH_STACKS, CODE_STACKS_0, CODE_STACKS_1 } from "$lib/constants";
-  import TechStacks from "../techstacks/TechStacks.svelte";
+  import type Link from "$lib/models/link";
+
+  export let name: string;
+  export let introduction: string;
+  export let links: Link[] = [];
 </script>
 
 <div class="profile-container">
   <div class="profile-circle"></div>
 </div>
 
+{#if links.length > 0}
+  <div class="links-container">
+    {#each links as l}
+      <a href={l.link}>{l.display}</a>
+    {/each}
+  </div>
+{/if}
+
 <div class="profile-description">
-  <h1>Coby Arff</h1>
+  <h1>{name}</h1>
   <p>
-    Software Engineer that works on some fun things on the side.
+    {introduction}
   </p>
 </div>
-
-<TechStacks title="Frameworks" tech_stacks={TECH_STACKS} />
-<TechStacks title="Code Familiarity" tech_stacks={CODE_STACKS_0} />
-<TechStacks title="Want learn more of..." tech_stacks={CODE_STACKS_1} />
 
 <style>
   .profile-container {
     display: flex;
     margin: 20px 0 10px 0;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links-container a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 5px;
   }
 
   .profile-circle {

@@ -4,20 +4,29 @@
 
 <script lang="ts">
 	import Profile from '$lib/components/profile/Profile.svelte';
+	import TechStacks from '$lib/components/techstacks/TechStacks.svelte';
+	import { PROFILE_LINKS, TECH_STACKS, CODE_STACKS, BACKEND_SERVICES, LEARNING_MATERIAL } from '$lib/constants';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="My Portfolio" />
 </svelte:head>
 
-<section id="me">
-	<Profile />
+<section id="me" style="padding-top: 50px;">
+	<Profile name="Coby Arff" introduction="Software Engineer that works on some fun things on the side." links={PROFILE_LINKS}/>
 </section>
 
-<!-- <section id="projects">
+<section id="experience">
+	<TechStacks title="Frameworks" tech_stacks={TECH_STACKS} size="large" />
+	<TechStacks title="Programming Languages" tech_stacks={CODE_STACKS} size="medium" />
+	<TechStacks title="Backend Services" tech_stacks={BACKEND_SERVICES} size="medium" />
+	<TechStacks title="Learning" tech_stacks={LEARNING_MATERIAL} size="small" />
+</section>
+
+<section id="projects">
 	PROJECTS
-</section> -->
+</section>
 
 <style>
 	section {
@@ -26,25 +35,5 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>

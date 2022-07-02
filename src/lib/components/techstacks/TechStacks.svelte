@@ -2,16 +2,17 @@
   import type TechStack from "$lib/models/techstack";
   export let title: string;
   export let tech_stacks: TechStack[];
+  export let size: string = "large";
 </script>
 
-<div class="title">
+<div class="title {size}">
   {title}
 </div>
 
 <div id="scroll-wrapper" class="tech-stacks-wrapper">
   <div id="scroll-container" class="tech-stacks-container">
     {#each tech_stacks as ts}
-      <div class="tech-stack" style="background-color: {ts.color}; border-color: {ts.borderColor}">
+      <div class="tech-stack {size}" style="background-color: {ts.color}; border-color: {ts.borderColor}">
         <a target="_blank" href="{ts.link}">
           {ts.name}
         </a>
@@ -24,8 +25,20 @@
   .title {
     color: #ffffff;
     font-weight: bold;
-    font-size: 40px;
     margin: 20px 0;
+    text-align: center;
+  }
+
+  .title.large {
+    font-size: 40px;
+  }
+
+  .title.medium {
+    font-size: 30px;
+  }
+
+  .title.small {
+    font-size: 20px;
   }
 
   .tech-stacks-wrapper {
@@ -58,12 +71,29 @@
     justify-content: center;
     flex: 1 0 auto;
     margin: 5px;
-    border: 3px solid gray;
-    border-radius: 5px;
     padding: 5px;
+    transition: ease-out 0.1s
+  }
+
+  .tech-stack.large {
     height: 30px;
+    border: 4px solid;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .tech-stack.medium {
+    height: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .tech-stack.small {
+    height: 15px;
+    border: 3px solid;
+    border-radius: 5px;
     font-size: 16px;
-    transition: ease-out 0.3s
   }
 
   .tech-stack a {
@@ -72,11 +102,10 @@
     font-weight: bold;
   }
 
-  .tech-stack:hover {
-    font-size: 30px;
-    flex: 2 0 auto;
-    height: 50px;
-    border: 5px solid gray;
-    transition: all 0.3s;
+  .tech-stack:hover, .tech-stack:active {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: all 0.2s;
   }
 </style>

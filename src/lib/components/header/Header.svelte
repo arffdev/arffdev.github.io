@@ -1,23 +1,36 @@
 <script lang="ts">
-	// import Fa from 'svelte-fa'
-	// import { faCodeCompare } from '@fortawesome/free-solid-svg-icons'
 	import { page } from '$app/stores';
+
+	let lineCss: string = ``;
+
+	function updateScrollProgress(_event: any) {
+		const h = document.documentElement, 
+					b = document.body,
+					st = 'scrollTop',
+					sh = 'scrollHeight';
+    const percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+		lineCss = `width: ${percent < 5 ? 5 : percent}%;`
+		console.log($page.url);
+	}
+
+	updateScrollProgress(null);
 </script>
 
+<svelte:window on:scroll={updateScrollProgress} />
+
 <header class="fancy-header">
-	<nav class="fancy-nav">
-		<a href="#me" class:active={$page.url.pathname === '/' || $page.url.pathname === '/#me'}>Me</a>
-		<a href="#projects" class:active={$page.url.pathname === '/#projects'}>projects</a>
-    <div class="line"></div>
+	<nav id="fancy-header" class="fancy-nav">
+		<a href="#me">Me</a>
+		<a href="#experience">experience</a>
+		<a href="#projects">projects</a>
 	</nav>
+	<div style={lineCss} class="progress-line" ></div>
 </header>
 
 <style>
 	.fancy-header {
-		/* position: fixed;
-		width: 100%; */
-		display: flex;
-		justify-content: center;
+		position: fixed;
+		width: 100%;
 		background-color: var(--secondary-color);;
 	}
 
@@ -27,50 +40,25 @@
 	}
 
 	.fancy-nav a {
+		display: inline-block;
+		padding: 0 10px;
 		color: var(--pure-white);
 		text-decoration: none;
 		font-size: 1.2em;
 		text-transform: uppercase;
 		font-weight: 500;
-		display: inline-block;
-		width: 80px;
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
 
 	.fancy-nav a:hover {
-		color: var(--pure-white);
-	}
-
-	.fancy-nav a.active {
 		color: var(--accent-color);
 	}
 
-	.fancy-nav .line {
-		width: 50%;
+	.progress-line {
 		height: 6px;
 		background: #ffff00;
-		opacity: 0;
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-
-	.fancy-nav a.active ~ .line {
-		opacity: 1;
-	}
-
-	.fancy-nav a:nth-child(1):hover ~ .line {
-		-webkit-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
-		opacity: 1;
-	}
-
-	.fancy-nav a:nth-child(2):hover ~ .line {
-		-webkit-transform: translateX(100%);
-		transform: translateX(100%);
-		-webkit-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
-		opacity: 1;
-	}
-
 </style>
