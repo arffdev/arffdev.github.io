@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-
-	let lineCss: string = ``;
+	let lineCss: string = "width: 5%;";
 
 	function updateScrollProgress(_event: any) {
 		const h = document.documentElement, 
@@ -10,17 +8,14 @@
 					sh = 'scrollHeight';
     const percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 		lineCss = `width: ${percent < 5 ? 5 : percent}%;`
-		console.log($page.url);
 	}
-
-	updateScrollProgress(null);
 </script>
 
 <svelte:window on:scroll={updateScrollProgress} />
 
 <header class="fancy-header">
 	<nav id="fancy-header" class="fancy-nav">
-		<a href="#me">Me</a>
+		<a href="#me">me</a>
 		<a href="#experience">experience</a>
 		<a href="#projects">projects</a>
 	</nav>

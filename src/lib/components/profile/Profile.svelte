@@ -28,11 +28,16 @@
 <style>
   .profile-container {
     display: flex;
+    flex-direction: column;
+		justify-content: center;
+		align-items: center;
     margin: 20px 0 10px 0;
   }
 
   .links-container {
     display: flex;
+		justify-content: center;
+		align-items: center;
     flex-direction: row;
   }
 

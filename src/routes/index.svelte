@@ -4,12 +4,13 @@
 
 <script lang="ts">
 	import Profile from '$lib/components/profile/Profile.svelte';
+	import Projects from '$lib/components/projects/Projects.svelte';
 	import TechStacks from '$lib/components/techstacks/TechStacks.svelte';
-	import { PROFILE_LINKS, TECH_STACKS, CODE_STACKS, BACKEND_SERVICES, LEARNING_MATERIAL } from '$lib/constants';
+	import { PROFILE_LINKS, TECH_STACKS, CODE_STACKS, BACKEND_SERVICES, LEARNING_MATERIAL, PROJECTS } from '$lib/constants';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>ArffDev</title>
 	<meta name="description" content="My Portfolio" />
 </svelte:head>
 
@@ -25,15 +26,15 @@
 </section>
 
 <section id="projects">
-	PROJECTS
+	<Projects projects={PROJECTS} />
 </section>
 
 <style>
 	section {
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 1;
+		flex: 1; */
 	}
 </style>
