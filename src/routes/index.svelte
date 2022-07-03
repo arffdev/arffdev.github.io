@@ -31,10 +31,10 @@
 
 <style>
 	section {
-		/* display: flex;
+		padding-top: 30px;
+		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1; */
+		justify-content: flex-start;
+		height: 100vh;
 	}
 </style>

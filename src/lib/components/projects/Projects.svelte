@@ -29,7 +29,6 @@
 
 <style>
   .projects-container {
-    margin-top: 20px;
     display: flex;
     flex-flow: column;
     align-items: center;

@@ -15,6 +15,10 @@
 	--column-margin-top: 4rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;

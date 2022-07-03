@@ -31,10 +31,10 @@
     flex-direction: column;
 		justify-content: center;
 		align-items: center;
-    margin: 20px 0 10px 0;
   }
 
   .links-container {
+    margin-top: 10px;
     display: flex;
 		justify-content: center;
 		align-items: center;
