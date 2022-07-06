@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import logo from "$lib/assets/logo.png"
 </script>
 
 <header class="fancy-header">
 	<a href="/">
-		<img src="src\lib\assets\logo.png" width="100px" height="100px" alt="logo" />
+		<img src={logo} width="100px" height="100px" alt="logo" />
 	</a>
 	<nav id="fancy-header" class="fancy-nav">
 		<a sveltekit:prefetch href="/about" class:active={$page.url.pathname === "/about"}>About</a>
