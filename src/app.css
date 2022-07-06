@@ -5,14 +5,12 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #272727;
-	--secondary-color: #414141;
-	--tertiary-color: #6e6e6e;
-	--accent-color: #ffff00;
-	--text-color: #ecedee;
-	--background-without-opacity: #ffffffb3;
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	--primary-color: #0B0C10;
+	--secondary-color: #1F2833;
+	--tertiary-color: #C5C6C7;
+	--accent-color: #66FCF1;
+	--secondary-accent-color: #45A29E;
+	--text-color: #FAF9F6;
 }
 
 html {
@@ -23,21 +21,4 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
-}
-
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	opacity: 0.05;
-}
-
-#svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
 }

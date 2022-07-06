@@ -3,14 +3,15 @@
 </script>
 
 <script lang="ts">
-	import Animate from '$lib/Animate.svelte';
+	import Animate from "$lib/Animate.svelte";
 </script>
 
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About me" />
+	<title>Contact</title>
+	<meta name="description" content="Contact me" />
 </svelte:head>
 
 <Animate>
-	<h1>About me will go here</h1>
+	<h1>Contacts will go here</h1>
 </Animate>
+

@@ -1,19 +1,31 @@
-import type Link from './models/link';
+import type IconLink from './models/iconLink';
 import type Project from './models/project';
 import type TechStack from './models/techstack';
 
-export const PROFILE_LINKS: Link[] = [
+export const ICON_LINKS: IconLink[] = [
   {
-    display: "GitHub",
-    link: "https://github.com/arffdev"
+    link: "https://github.com/arffdev",
+		name: "GitHub",
+		iconPath: "src/lib/assets/github.png",
+		iconWidth: "30px",
+		iconHeight: "30px",
+		iconCss: "padding-bottom: 30px;"
   },
   {
-    display: "LinkedIn",
-    link: "https://www.linkedin.com/in/coby-arff-12a675139/"
+    link: "https://pugdev.itch.io/",
+		name: "itch.io",
+		iconPath: "src/lib/assets/itchio.png",
+		iconWidth: "30px",
+		iconHeight: "30px",
+		iconCss: "padding-bottom: 20px;"
   },
   {
-    display: "itch.io",
-    link: "https://pugdev.itch.io/"
+    link: "https://www.linkedin.com/in/coby-arff-12a675139/",
+    name: "LinkedIn",
+		iconPath: "src/lib/assets/linkedIn.png",
+		iconWidth: "50px",
+		iconHeight: "50px",
+		iconCss: "padding-bottom: 30px;"
   }
 ];
 
