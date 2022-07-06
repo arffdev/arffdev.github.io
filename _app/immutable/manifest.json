@@ -1,32 +1,34 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8835b616.js",
+    "file": "start-a86c131c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-9622eeea.js",
-      "_singletons-d1fb5791.js"
+      "_index-8faeae4e.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/about.svelte",
+      "src/routes/contact.svelte",
       "src/routes/index.svelte",
-      "src/routes/todos/index.svelte"
+      "src/routes/projects.svelte",
+      "src/routes/skills.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-7ff7fc42.js",
+    "file": "pages/__layout.svelte-8a00ed01.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9622eeea.js"
+      "_index-8faeae4e.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-6fc5dab1.css"
+      "assets/pages/__layout.svelte-0448ad07.css"
     ],
     "assets": [
+      "assets/logo-140d8fa6.png",
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
       "assets/fira-mono-all-400-normal-1e3b098c.woff",
       "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
@@ -37,55 +39,88 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-cfa5e016.js",
+    "file": "error.svelte-7500138d.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9622eeea.js"
+      "_index-8faeae4e.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-93e82e0b.js",
+    "file": "pages/about.svelte-8a176978.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9622eeea.js"
-    ],
-    "css": [
-      "assets/pages/about.svelte-bf4528fa.css"
+      "_index-8faeae4e.js",
+      "_Animate-1c72d6e5.js"
+    ]
+  },
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-00cb533c.js",
+    "src": "src/routes/contact.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8faeae4e.js",
+      "_Animate-1c72d6e5.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-573413bb.js",
+    "file": "pages/index.svelte-bca1587d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9622eeea.js"
+      "_index-8faeae4e.js",
+      "_Animate-1c72d6e5.js"
     ],
     "css": [
-      "assets/pages/index.svelte-5c8b0a5a.css"
+      "assets/pages/index.svelte-46f5c644.css"
     ]
   },
-  "src/routes/todos/index.svelte": {
-    "file": "pages/todos/index.svelte-1694d2bd.js",
-    "src": "src/routes/todos/index.svelte",
+  "src/routes/projects.svelte": {
+    "file": "pages/projects.svelte-280bec4a.js",
+    "src": "src/routes/projects.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9622eeea.js",
-      "_singletons-d1fb5791.js"
+      "_index-8faeae4e.js",
+      "_Animate-1c72d6e5.js",
+      "_constants-f43123b6.js"
     ],
     "css": [
-      "assets/pages/todos/index.svelte-506ff002.css"
+      "assets/pages/projects.svelte-78d75e31.css"
     ]
   },
-  "_index-9622eeea.js": {
-    "file": "chunks/index-9622eeea.js"
+  "src/routes/skills.svelte": {
+    "file": "pages/skills.svelte-49f392cd.js",
+    "src": "src/routes/skills.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8faeae4e.js",
+      "_Animate-1c72d6e5.js",
+      "_constants-f43123b6.js"
+    ],
+    "css": [
+      "assets/pages/skills.svelte-b6fd82b8.css"
+    ]
   },
-  "_singletons-d1fb5791.js": {
-    "file": "chunks/singletons-d1fb5791.js"
+  "_index-8faeae4e.js": {
+    "file": "chunks/index-8faeae4e.js"
+  },
+  "_Animate-1c72d6e5.js": {
+    "file": "chunks/Animate-1c72d6e5.js",
+    "imports": [
+      "_index-8faeae4e.js"
+    ],
+    "css": [
+      "assets/Animate-93e75dac.css"
+    ]
+  },
+  "_constants-f43123b6.js": {
+    "file": "chunks/constants-f43123b6.js"
   }
 }

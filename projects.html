@@ -4,23 +4,25 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content=""><title>About</title><meta name="description" content="About me" data-svelte="svelte-15hgu2d">
+		<meta http-equiv="content-security-policy" content=""><title>Projects</title><meta name="description" content="Projects I'm working on" data-svelte="svelte-7i7c04">
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-0448ad07.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/projects.svelte-78d75e31.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Animate-93e75dac.css">
 	<link rel="modulepreload" href="/_app/immutable/start-a86c131c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-8faeae4e.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-8a00ed01.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/about.svelte-8a176978.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/projects.svelte-280bec4a.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Animate-1c72d6e5.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/constants-f43123b6.js">
 	</head>
 	<body>
 		<div>
 
 
 <header class="fancy-header svelte-octp1o"><a href="/"><img src="/_app/immutable/assets/logo-140d8fa6.png" width="100px" height="100px" alt="logo"></a>
-	<nav id="fancy-header" class="fancy-nav svelte-octp1o"><a sveltekit:prefetch href="/about" class="svelte-octp1o active">About</a>
+	<nav id="fancy-header" class="fancy-nav svelte-octp1o"><a sveltekit:prefetch href="/about" class="svelte-octp1o">About</a>
 		<a sveltekit:prefetch href="/skills" class="svelte-octp1o">Experience &amp; Skill</a>
-		<a sveltekit:prefetch href="/projects" class="svelte-octp1o">Projects</a>
+		<a sveltekit:prefetch href="/projects" class="svelte-octp1o active">Projects</a>
 		<a sveltekit:prefetch href="/contact" class="svelte-octp1o">Get in Touch</a></nav>
 </header>
 
@@ -30,15 +32,33 @@
 </div>
 	<div class="content svelte-o18ido">
 
-<section class="svelte-16ixu03"><h1>About me will go here</h1>
+<section class="svelte-16ixu03"><div class="projects-container svelte-1le96c1"><h1 class="svelte-1le96c1">Projects</h1>
+  <div class="subtext svelte-1le96c1">I have a lot of different side projects I&#39;m working on but the ones listed below on the main ones I work on and maintain.
+  </div>
+  <div class="project svelte-1le96c1"><a href="https://github.com/arffdev/arffdev.github.io" class="title svelte-1le96c1">arffdev.github.io</a>
+      <div class="description svelte-1le96c1">This project! This is a small portfolio/resume project I decided to make for fun. It was really just an excuse to mess around with svelte and github pages.</div>
+      
+      <div class="status svelte-1le96c1">Released</div>
+    </div><div class="project svelte-1le96c1"><a href="https://court-booker.web.app/" class="title svelte-1le96c1">Court Booker</a>
+      <div class="description svelte-1le96c1">Court booking application where users can create their own clubs, invite other users to be a part of their clubs, and make reservations. Currently there is still a lot of features and QA missing from this project but the core is there (add players, make reservations, adjust club rules, invite not available yet).</div>
+      <div class="description svelte-1le96c1">During college I worked part time for a tennis club facility but their system was extremely archaic. Everything was done by hand, writing down who was what court (big sheets of paper), hand writing receipts etc. The original goal was to build something they could use for free or at least something with very limited cost. It has now evolved into a much large project that I am still actively working on in parallel with other things.
+        </div>
+      <div class="status svelte-1le96c1">Prototype</div>
+    </div><div class="project svelte-1le96c1"><a href="https://pugdev.itch.io/" class="title svelte-1le96c1">Megabat</a>
+      <div class="description svelte-1le96c1">A simple game where you play as a fruit bat (megabat) that collects fruit every level.</div>
+      <div class="description svelte-1le96c1">Started as a small project to see what I could get done in a total of 48 hours and has since evolved into something I would like to build out more of so I can say I released a full game that is more then a prototype.
+        </div>
+      <div class="status svelte-1le96c1">Prototype - Download and play for free.</div>
+    </div>
+</div>
 </section></div>
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="156znai">
+		<script type="module" data-sveltekit-hydrate="102y8rd">
 		import { start } from "/_app/immutable/start-a86c131c.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="156znai"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="102y8rd"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -47,9 +67,9 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 2],
+				nodes: [0, 5],
 				params: {},
-				routeId: "about"
+				routeId: "projects"
 			}
 		});
 	</script></div>
