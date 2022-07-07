@@ -17,7 +17,10 @@
 		<h1 class="name">Coby Arff.</h1>
 		<p class="subtext">Software Engineer that works on some fun things on the side.</p>
 		<p class="introduction">
-			I was in college for about 7 years, because like most people I didn't really know what I wanted to do with my life. I just focused on classes I liked, which at the time was <strong>Psychology</strong>. After about 3 years of working towards a Psychology degree I decided it wasn't for me and took a chance on getting a <strong>Computer Science</strong> degree. I ended up graduating with both.
+			I was in college for about 7 years, because like most people I didn't really know what I wanted to do with my life. 
+			I just focused on classes I liked, which at the time was <strong>Psychology</strong>. After about 3 years of working 
+			towards a Psychology degree I decided it wasn't for me and took a chance on getting a <strong>Computer Science</strong> degree. 
+			I ended up graduating with both.
 		</p>
 		<a class="email" href="mailto:arffdevelopment@gmail.com">Say Hello!</a>
 	</div>

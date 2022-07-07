@@ -15,6 +15,7 @@
 
 <style>
 	main {
+		/* TODO: lets setup grid instead of flex it will make the header and side nav better */
 		display: flex;
 		flex-direction: row;
 		width: 100%;
