@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-887183f0.js",
+    "file": "start-80117bfc.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -48,16 +48,17 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-e42cfc73.js",
+    "file": "pages/about.svelte-03c0aceb.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f5b05074.js",
-      "_Animate-75a6aefd.js"
+      "_Animate-75a6aefd.js",
+      "_CircleImage-241e2e93.js"
     ],
     "css": [
-      "assets/pages/about.svelte-a7761bf4.css"
+      "assets/pages/about.svelte-eee0b629.css"
     ],
     "assets": [
       "assets/profile-1bad6b44.png"
@@ -87,31 +88,32 @@
     ]
   },
   "src/routes/projects.svelte": {
-    "file": "pages/projects.svelte-b9eb353f.js",
+    "file": "pages/projects.svelte-c7f58d82.js",
     "src": "src/routes/projects.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f5b05074.js",
       "_Animate-75a6aefd.js",
-      "_constants-d75b75f7.js"
+      "_CircleImage-241e2e93.js",
+      "_constants-e7a313ab.js"
     ],
     "css": [
-      "assets/pages/projects.svelte-954ec0cc.css"
+      "assets/pages/projects.svelte-35049c9a.css"
     ]
   },
   "src/routes/skills.svelte": {
-    "file": "pages/skills.svelte-82228337.js",
+    "file": "pages/skills.svelte-f3d0e8fa.js",
     "src": "src/routes/skills.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f5b05074.js",
       "_Animate-75a6aefd.js",
-      "_constants-d75b75f7.js"
+      "_constants-e7a313ab.js"
     ],
     "css": [
-      "assets/pages/skills.svelte-24aae50f.css"
+      "assets/pages/skills.svelte-c110fbfe.css"
     ]
   },
   "_index-f5b05074.js": {
@@ -126,7 +128,16 @@
       "assets/Animate-f6b39e18.css"
     ]
   },
-  "_constants-d75b75f7.js": {
-    "file": "chunks/constants-d75b75f7.js"
+  "_CircleImage-241e2e93.js": {
+    "file": "chunks/CircleImage-241e2e93.js",
+    "imports": [
+      "_index-f5b05074.js"
+    ],
+    "css": [
+      "assets/CircleImage-478988e4.css"
+    ]
+  },
+  "_constants-e7a313ab.js": {
+    "file": "chunks/constants-e7a313ab.js"
   }
 }
