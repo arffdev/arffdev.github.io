@@ -6,7 +6,7 @@
 
 <div class="side-nav">
   <a href="https://github.com/arffdev" target="_blank" rel="noopener noreferrer">
-    <img src={github} width="30px" height="30px" alt="GitHub" style="padding-bottom: 30px;" />
+    <img src={github} width="30px" height="30px" alt="GitHub" style="padding: 20px 0 30px; 0" />
   </a>
   <a href="https://pugdev.itch.io/" target="_blank" rel="noopener noreferrer">
     <img src={itchio} width="30px" height="30px" alt="itch.io" style="padding-bottom: 20px;" />
@@ -22,7 +22,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 100vh;
-    min-width: 100px;
+    /* width: 100px; */
   }
 </style>

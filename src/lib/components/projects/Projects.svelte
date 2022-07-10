@@ -33,6 +33,7 @@
     flex-flow: column;
     align-items: center;
     align-content: space-between;
+    width: 100%;
   }
 
   .projects-container h1 {

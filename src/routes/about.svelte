@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About - ArffDev</title>
 	<meta name="description" content="About me" />
 </svelte:head>
 

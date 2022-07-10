@@ -1,5 +1,6 @@
 import type IconLink from './models/iconLink';
 import type Project from './models/project';
+import type Qualification from './models/qualification';
 import type TechStack from './models/techstack';
 
 export const ICON_LINKS: IconLink[] = [
@@ -29,93 +30,129 @@ export const ICON_LINKS: IconLink[] = [
   }
 ];
 
-export const TECH_STACKS: TechStack[] = [
+export const EXPERIENCE: Qualification[] = [
 	{
-		name: 'React',
-		color: '#61dafb',
-		borderColor: '#ffffff',
-		link: 'https://reactjs.org/'
+		name: "Paylocity",
+		title: "Senior Software Engineer",
+		date: "May 2018 - Present",
+		skills: [
+			{
+				name: "Works on/with a great team to build Paylocity's Community Application.",
+				link: "",
+			},
+		],
 	},
 	{
-		name: 'Angular',
-		color: '#dd0031',
-		borderColor: '#ffffff',
-		link: 'https://angular.io/'
-	},
-	{
-		name: 'Svelte',
-		color: '#ff3e00',
-		borderColor: '#ffffff',
-		link: 'https://svelte.dev/'
-	},
-	{
-		name: '.NET',
-		color: '#5b24e3',
-		borderColor: '#ffffff',
-		link: 'https://docs.microsoft.com/en-us/dotnet/fundamentals/'
-	},
-	{
-		name: 'Ionic',
-		color: '#42ccff',
-		borderColor: '#ffffff',
-		link: 'https://ionicframework.com/'
-	},
-	{
-		name: 'Godot',
-		color: '#478cbf',
-		borderColor: '#ffffff',
-		link: 'https://godotengine.org/'
+		name: "BMobile",
+		title: "Software Engineer",
+		date: "May 2016 - May 2018",
+		skills: [
+			{
+				name: "First Software Engineering job during and out of College.",
+				link: "",
+			},
+		],
 	}
 ];
 
-export const CODE_STACKS: TechStack[] = [
+export const SKILLS: Qualification[] = [
 	{
-		name: 'Javascript',
-		color: '#fcdc00',
-		borderColor: '#ffffff',
-		link: 'https://www.javascript.com/'
+		name: "Frameworks",
+		title: "",
+		date: "",
+		skills: [
+			{
+				name: "React",
+				link: 'https://reactjs.org/'
+			},
+			{
+				name: 'Angular',
+				link: 'https://angular.io/'
+			},
+			{
+				name: 'Svelte',
+				link: 'https://svelte.dev/'
+			},
+			{
+				name: '.NET',
+				link: 'https://docs.microsoft.com/en-us/dotnet/fundamentals/'
+			},
+			{
+				name: 'Ionic',
+				link: 'https://ionicframework.com/'
+			},
+			{
+				name: 'Godot',
+				link: 'https://godotengine.org/'
+			}
+		],
 	},
 	{
-		name: 'Typescript',
-		color: '#3178c6',
-		borderColor: '#ffffff',
-		link: 'https://www.typescriptlang.org/'
+		name: "Languages",
+		title: "",
+		date: "",
+		skills: [
+			{
+				name: 'Javascript',
+				link: 'https://www.javascript.com/'
+			},
+			{
+				name: 'Typescript',
+				link: 'https://www.typescriptlang.org/'
+			},
+			{
+				name: 'C#',
+				link: 'https://docs.microsoft.com/en-us/dotnet/csharp/'
+			},
+			{
+				name: 'GDScript',
+				link: 'https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html'
+			}
+		],
 	},
 	{
-		name: 'C#',
-		color: '#5b24e3',
-		borderColor: '#ffffff',
-		link: 'https://docs.microsoft.com/en-us/dotnet/csharp/'
+		name: "Backend",
+		title: "",
+		date: "",
+		skills: [
+			{
+				name: 'Firebase',
+				link: 'https://firebase.google.com/'
+			},
+			{
+				name: 'MongoDb',
+				link: 'https://www.mongodb.com/'
+			},
+			{
+				name: 'AWS',
+				link: 'https://aws.amazon.com/'
+			},
+		],
 	},
 	{
-		name: 'GDScript',
-		color: '#478cbf',
-		borderColor: '#ffffff',
-		link: 'https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html'
-	}
+		name: "Learning",
+		title: "",
+		date: "",
+		skills: [
+			{
+				name: 'Tauri',
+				link: 'https://tauri.app/'
+			},
+			{
+				name: 'Native iOS/Android',
+				link: 'https://developer.apple.com/swift/'
+			},
+			{
+				name: 'Swift',
+				link: 'https://developer.apple.com/swift/'
+			},
+			{
+				name: 'Kotlin',
+				link: 'https://kotlinlang.org/'
+			}
+		],
+	},
 ];
-
-export const BACKEND_SERVICES: TechStack[] = [
-	{
-		name: 'Firebase',
-		color: '#1a73e8',
-		borderColor: '#ffcc30',
-		link: 'https://firebase.google.com/'
-	},
-	{
-		name: 'MongoDb',
-		color: '#13aa51',
-		borderColor: '#ffffff',
-		link: 'https://www.mongodb.com/'
-	},
-	{
-		name: 'AWS',
-		color: '#ec912d',
-		borderColor: '#ffffff',
-		link: 'https://aws.amazon.com/'
-	},
-];
-
 export const LEARNING_MATERIAL: TechStack[] = [
 	{
 		name: 'Tauri',

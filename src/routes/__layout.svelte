@@ -4,27 +4,44 @@
 	import '../app.css';
 </script>
 
-<Header />
-
 <main>
-	<SideNav />
+	<div class="topbar">
+		<Header />
+	</div>
+	<div class="sidebar">
+		<SideNav />
+	</div>
 	<div class="content">
 		<slot />
 	</div>
 </main>
 
 <style>
+	/* TODO: do a media calculation for mobile */
 	main {
-		/* TODO: lets setup grid instead of flex it will make the header and side nav better */
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		margin: 0 auto;
-		box-sizing: border-box;
+		display: grid;
+		grid-template-areas: 
+			"topbar topbar"
+			"sidebar content"
+			"sidebar footer"; /* TODO: probably don't need the footer */
+		height: 100vh;
+  	grid-template-columns: 100px auto;
 	}
 
-	main .content {
+	.topbar {
+		grid-area: topbar;
+	}
+
+	.sidebar {
+		grid-area: sidebar;
+		width: 100px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	.content {
+		grid-area: content;
 		width: 100%;
-		padding: 0 10px;
 	}
 </style>

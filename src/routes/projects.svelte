@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects</title>
+	<title>Projects - ArffDev</title>
 	<meta name="description" content="Projects I'm working on" />
 </svelte:head>
 
