@@ -1,10 +1,8 @@
-// import type Link from "./link";
-
 export default interface Project {
   name: string;
-  projectLink: string;
+  link: string;
   description: string;
   history?: string;
-  // links: Link[];
   status: string;
+  image?: string;
 }

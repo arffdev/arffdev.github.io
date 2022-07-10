@@ -5,6 +5,7 @@
 <script lang="ts">
 	import Animate from '$lib/Animate.svelte';
 	import profile from "$lib/assets/profile.png"
+import CircleImage from '$lib/components/display/CircleImage.svelte';
 </script>
 
 <svelte:head>
@@ -32,11 +33,7 @@
 				After that, I was far less afraid of making mistakes as it's just part of growing in your field.
 			</p>
 		</div>
-		<div class="profile-image-wrapper">
-			<div class="profile-image-container">
-				<img src={profile} width="300px" height="300px" alt="profile" />
-			</div>
-		</div>
+		<CircleImage image={profile} />
 	</div>
 </Animate>
 

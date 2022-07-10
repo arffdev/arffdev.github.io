@@ -6,15 +6,14 @@
   let scrollPercent: number = 0;
 
 	function updateScrollProgress(_event: any) {
-    console.log("test1: ", document.documentElement);
+    // Was lazy and looked this up
+    // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
 		const h = document.getElementById(`${id}-fancy-list`); 
 		const b = document.body;
 		const st = 'scrollTop';
 	  const sh = 'scrollHeight';
-    console.log("scrollPercent: ", scrollPercent);
     if (h && b) {
       scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-      console.log("scrollPercent: ", scrollPercent);
     }
 	}
 
@@ -162,6 +161,5 @@
     left: -1em;
     top: 0.8em;
     position: relative;
-    min-width: 100px;
   }
 </style>
