@@ -153,53 +153,29 @@ export const SKILLS: Qualification[] = [
 		],
 	},
 ];
-export const LEARNING_MATERIAL: TechStack[] = [
-	{
-		name: 'Tauri',
-		color: '#24c8db',
-		borderColor: '#ffc131',
-		link: 'https://tauri.app/'
-	},
-	{
-		name: 'Native iOS/Android',
-		color: '#3ddc84',
-		borderColor: '#ffffff',
-		link: 'https://developer.apple.com/swift/'
-	},
-	{
-		name: 'Swift',
-		color: '#fd7e35',
-		borderColor: '#ffffff',
-		link: 'https://developer.apple.com/swift/'
-	},
-	{
-		name: 'Kotlin',
-		color: '#7f52ff',
-		borderColor: '#ffffff',
-		link: 'https://kotlinlang.org/'
-	}
-];
-
 
 export const PROJECTS: Project[] = [
 	{
 		name: 'arffdev.github.io',
 		link: 'https://github.com/arffdev/arffdev.github.io',
 		description: 'This project! This is a small portfolio/resume project I decided to make for fun. It was really just an excuse to mess around with svelte and github pages.',
-		status: 'Released'
+		status: 'Released',
+		imagePath: 'favicon.png',
 	},
 	{
 		name: 'Court Booker',
 		link: 'https://court-booker.web.app/',
 		description: 'Court booking application where users can create their own clubs, invite other users to be a part of their clubs, and make reservations. Currently there is still a lot of features and QA missing from this project but the core is there (add players, make reservations, adjust club rules, invite not available yet).',
 		history: 'During college I worked part time for a tennis club facility but their system was extremely archaic. Everything was done by hand, writing down who was what court (big sheets of paper), hand writing receipts etc. The original goal was to build something they could use for free or at least something with very limited cost. It has now evolved into a much large project that I am still actively working on in parallel with other things.',
-		status: 'Prototype'
+		status: 'Prototype',
+		imagePath: 'courtbooker.png',
 	},
 	{
 		name: 'Megabat',
 		link: 'https://pugdev.itch.io/',
 		description: 'A simple game where you play as a fruit bat (megabat) that collects fruit every level.',
 		history: 'Started as a small project to see what I could get done in a total of 48 hours and has since evolved into something I would like to build out more of so I can say I released a full game that is more then a prototype.',
-		status: 'Prototype - Download and play for free.'
+		status: 'Prototype - Download and play for free.',
+		imagePath: 'megabat.png',
 	}
 ];

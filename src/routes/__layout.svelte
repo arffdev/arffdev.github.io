@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from '$lib/components/nav/Header.svelte';
-	import SideNav from '$lib/components/nav/SideNav.svelte';
-	import '../app.css';
+import Header from '$lib/components/nav/Header.svelte';
+import SideNav from '$lib/components/nav/SideNav.svelte';
+import '../app.css';
 </script>
 
 <main>
@@ -17,13 +17,12 @@
 </main>
 
 <style>
-	/* TODO: do a media calculation for mobile */
 	main {
 		display: grid;
 		grid-template-areas: 
 			"topbar topbar"
 			"sidebar content"
-			"sidebar footer"; /* TODO: probably don't need the footer */
+			"sidebar footer";
 		height: 100vh;
   	grid-template-columns: 100px auto;
 	}
@@ -43,5 +42,19 @@
 	.content {
 		grid-area: content;
 		width: 100%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		main {
+			grid-template-areas: 
+			"topbar"
+			"content"
+			"footer";
+			grid-template-columns: auto;
+		}
+
+		.sidebar {
+			display: none;
+		}
 	}
 </style>

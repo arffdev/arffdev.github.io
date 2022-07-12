@@ -1,9 +1,9 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+export const prerender = true;
 </script>
 
 <script lang="ts">
-	import Animate from '$lib/Animate.svelte';
+import Animate from '$lib/Animate.svelte';
 </script>
 
 <svelte:head>

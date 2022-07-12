@@ -1,10 +1,9 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+export const prerender = true;
 </script>
 
 <script lang="ts">
-	import Animate from '$lib/Animate.svelte';
-	import profile from "$lib/assets/profile.png"
+import Animate from '$lib/Animate.svelte';
 import CircleImage from '$lib/components/display/CircleImage.svelte';
 </script>
 
@@ -33,7 +32,7 @@ import CircleImage from '$lib/components/display/CircleImage.svelte';
 				After that, I was far less afraid of making mistakes as it's just part of growing in your field.
 			</p>
 		</div>
-		<CircleImage image={profile} />
+		<CircleImage image="profile.png" />
 	</div>
 </Animate>
 
@@ -42,28 +41,6 @@ import CircleImage from '$lib/components/display/CircleImage.svelte';
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-	}
-
-	.profile-image-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.profile-image-container {
-		text-align: center;
-		border: 8px solid var(--accent-color);
-		padding: 20px;
-		border-radius: 50%;
-		width: 300px;
-		height: 300px;
-	}
-
-	.profile-image-container img {
-		background-color: var(--accent-color);
-		border-radius: 50%;
-		width: 300px;
-		height: 300px;
 	}
 
 	.about-container {

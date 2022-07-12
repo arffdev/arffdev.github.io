@@ -6,11 +6,13 @@
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--primary-color: #0B0C10;
-	--secondary-color: #1F2833;
+	--secondary-color: #0e1114;
 	--tertiary-color: #C5C6C7;
 	--accent-color: #66FCF1;
 	--secondary-accent-color: #45A29E;
 	--text-color: #FAF9F6;
+
+	--mobile-width: 800px;
 }
 
 html {
@@ -21,4 +23,20 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--secondary-color); 
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
 }

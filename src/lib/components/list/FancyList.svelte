@@ -1,35 +1,34 @@
 <script lang="ts">
-  import type Qualification from "$lib/models/qualification";
+import type Qualification from "$lib/models/qualification";
 
-  export let id: string;
-  export let qualifications: Qualification[];
-  let scrollPercent: number = 0;
+export let id: string;
+export let qualifications: Qualification[];
+let scrollPercent: number = 0;
 
-	function updateScrollProgress(_event: any) {
-    // Was lazy and looked this up
-    // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
-		const h = document.getElementById(`${id}-fancy-list`); 
-		const b = document.body;
-		const st = 'scrollTop';
-	  const sh = 'scrollHeight';
-    if (h && b) {
-      scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-    }
-	}
-
-  function calculateScrollPercent(index: number, listLength: number): number {
-    if (index === 0) {
-      return 0;
-    } else if (index === listLength - 1) {
-      return 100;
-    }
-    console.log("test: ", (index) / (listLength - 1));
-    return (index / (listLength - 1)) * 100;
+function updateScrollProgress(_event: any) {
+  // Was lazy and looked this up
+  // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
+  const h = document.getElementById(`${id}-fancy-list`); 
+  const b = document.body;
+  const st = 'scrollTop';
+  const sh = 'scrollHeight';
+  if (h && b) {
+    scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
   }
+}
 
-  function scrollToItem(id: string): void {
-    document.getElementById(id)?.scrollIntoView();
+function calculateScrollPercent(index: number, listLength: number): number {
+  if (index === 0) {
+    return 0;
+  } else if (index === listLength - 1) {
+    return 100;
   }
+  return (index / (listLength - 1)) * 100;
+}
+
+function scrollToItem(id: string): void {
+  document.getElementById(id)?.scrollIntoView();
+}
 </script>
 
 <div class="fancy-list">
@@ -62,22 +61,6 @@
 </div>
 
 <style>
-  ::-webkit-scrollbar {
-    width: 2px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: var(--secondary-color); 
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent-color); 
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-
   .fancy-list {
     display: flex;
     flex-direction: row;
@@ -152,7 +135,7 @@
 
   .skills li::before {
     content: "";
-    border-color: transparent var(--accent-color);;
+    border-color: transparent var(--accent-color);
     border-style: solid;
     border-width: 0.25em 0 0.25em 0.35em;
     display: block;

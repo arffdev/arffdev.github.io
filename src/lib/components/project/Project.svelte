@@ -1,12 +1,14 @@
 <script lang="ts">
-  import type Project from "$lib/models/project";
+import type Project from "$lib/models/project";
 import CircleImage from "../display/CircleImage.svelte";
 
-  export let project: Project;
+export let project: Project;
 </script>
 
 <div class="project-container">
-  <CircleImage image={""} />
+  {#if project.imagePath}
+    <CircleImage image={project.imagePath} hasBackgroundColor={false} />
+  {/if}
   <div class="details-container">
     <div class="details">
       <h1 class="title">{project.name}</h1>
@@ -22,16 +24,18 @@ import CircleImage from "../display/CircleImage.svelte";
         {/if}
       </ul>
     </div>
-    <a href="{project.link}">View Project</a>
+    <a href="{project.link}" target="_blank" rel="noopener noreferrer">View Project</a>
   </div>
 </div>
 
 <style>
   .project-container {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .details-container {
@@ -40,6 +44,7 @@ import CircleImage from "../display/CircleImage.svelte";
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    flex: 1 300px
   }
 
   .details-container .details {

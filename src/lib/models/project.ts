@@ -4,5 +4,5 @@ export default interface Project {
   description: string;
   history?: string;
   status: string;
-  image?: string;
+  imagePath: string;
 }

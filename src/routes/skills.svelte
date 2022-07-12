@@ -1,11 +1,11 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+export const prerender = true;
 </script>
 
 <script lang="ts">
-	import Animate from '$lib/Animate.svelte';
-	import FancyList from '$lib/components/list/FancyList.svelte';
-	import { EXPERIENCE, SKILLS } from '$lib/constants';
+import Animate from '$lib/Animate.svelte';
+import FancyList from '$lib/components/list/FancyList.svelte';
+import { EXPERIENCE, SKILLS } from '$lib/constants';
 </script>
 
 <svelte:head>
