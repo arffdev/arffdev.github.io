@@ -32,12 +32,58 @@ export const ICON_LINKS: IconLink[] = [
 
 export const EXPERIENCE: Qualification[] = [
 	{
-		name: "Paylocity",
+		name: "Paylocity SSE",
 		title: "Senior Software Engineer",
-		date: "May 2018 - Present",
+		date: "May 2022 - Present",
 		skills: [
 			{
-				name: "Works on/with a great team to build Paylocity's Community Application.",
+				name: "Mobile (ionic framework) development lead for community feature team.",
+				link: "",
+			},
+			{
+				name: "Help scope out importance of new features.",
+				link: "",
+			},
+			{
+				name: "Assist and lead other devs in completion of new features.",
+				link: "",
+			},
+		],
+	},
+	{
+		name: "Paylocity SE",
+		title: "Software Engineer",
+		date: "Nov 2019 - May 2022",
+		skills: [
+			{
+				name: "Worked with mobile team to introduce new features.",
+				link: "",
+			},
+			{
+				name: "Setup browserstack with webdriver automation testing.",
+				link: "",
+			},
+			{
+				name: "NGRX implementation into old angular app. (Rewrite of entire feature)",
+				link: "",
+			},
+		],
+	},
+	{
+		name: "Paylocity ASE",
+		title: "Associate Software Engineer",
+		date: "May 2016 - Nov 2019",
+		skills: [
+			{
+				name: "Built out core features of community product.",
+				link: "",
+			},
+			{
+				name: "File upload using AWS.",
+				link: "",
+			},
+			{
+				name: "Upgraded Ionic application from AngularJS to Angular 2+",
 				link: "",
 			},
 		],
@@ -48,7 +94,15 @@ export const EXPERIENCE: Qualification[] = [
 		date: "May 2016 - May 2018",
 		skills: [
 			{
-				name: "First Software Engineering job during and out of College.",
+				name: "Worked on web app using google map integration, ASP.NET Core, and Angular2.",
+				link: "",
+			},
+			{
+				name: "Develop and manage ecommerce website.",
+				link: "",
+			},
+			{
+				name: "Used Ionic 3 to update old applications.",
 				link: "",
 			},
 		],
@@ -149,6 +203,10 @@ export const SKILLS: Qualification[] = [
 			{
 				name: 'Kotlin',
 				link: 'https://kotlinlang.org/'
+			},
+			{
+				name: 'Nx',
+				link: 'https://nx.dev/'
 			}
 		],
 	},

@@ -81,6 +81,7 @@ function scrollToItem(id: string): void {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 12px;
+    cursor: pointer;
   }
 
   .fancy-nav button.active {
